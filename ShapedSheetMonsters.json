@@ -1,0 +1,79 @@
+on('ready', function() {
+    ShapedScripts.addEntities({
+        "version": "1.0.0",
+        "monsters": [
+            {
+                "name": "",
+                "size": "Gargantuan",
+                "type": "construct",
+                "alignment": "unaligned",
+                "AC": "16 (natural armor)",
+                "HP": "5 (1d10)",
+                "speed": "30 ft.",
+                "strength": 26,
+                "dexterity": 7,
+                "constitution": 20,
+                "intelligence": 1,
+                "wisdom": 3,
+                "charisma": 3,
+                "challenge": "11",
+                "traits": [
+                    {
+                        "name": "Special Equipment",
+                        "text": "Has a Wand of Magic Missiles."
+                    },
+                    {
+                        "name": "Fey Ancestry",
+                        "text": "Has advantage on saving throws against being charmed, and magic can't put him to sleep."
+                    },
+                    {
+                        "name": "Sunlight Sensitivity",
+                        "text": "Nezznar has disadvantage on attack rolls when he or his target is in sunlight."
+                    },
+                    {
+                        "name": "Innate Spellcasting",
+                        "text": "Can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire (save DC 12)"
+                    },
+                    {
+                        "name": "Spellcasting",
+                        "text": "Is a 4th-level spellcaster that uses Intelligence as his spellcasting ability (spell save DC 13; +5 to hit with spell attacks). Nezznar has the following spells prepared from the wizard's spell list:\nCantrips (at will): mage hand, ray of frost, shocking grasp\n1st level (4 slots): mage armor, magic missile, shield\n2nd level (3 slots): invisibility, suggestion"
+                    }],
+                "actions": [
+                    {
+                        "name": "Multiattack",
+                        "text": "Makes two melee attacks."
+                    },
+                    {
+                        "name": "Shortsword",
+                        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+                    }],
+                "reactions": [
+                    {
+                        "name": "Duck and Cover",
+                        "text": "Adds 2 to AC against one ranged attack that would hit it.  To do so, it must be able to see the attacker and cannot be Grappled or Restrained."
+                    }],
+                "savingThrows": "Con +9, Wis +0, Cha +0",
+                "damageImmunities": "poison, psychic",
+                "conditionImmunities": "blinded, charmed",
+                "skills": "Deception +5, Insight +5",
+                "senses": "blindsight 120 ft. (blind beyond this radius)",
+                "spells": "entangle, invisibility",
+                "languages": "None",
+                "LegendaryPoints": 3,
+                "LegendaryActions": [
+                    {
+                        "name": "",
+                        "cost": 1,
+                        "text": ""
+                    },
+                    {
+                        "name": "",
+                        "cost": 1,
+                        "text": ""
+                    }]
+            },
+            {
+            }],
+        "name":"StormKingsThunder"
+    }
+});

@@ -1,0 +1,768 @@
+on('ready', function() {
+    ShapedScripts.addEntities({
+        "version":"1.0.0",
+        "monsters":[
+            {
+                "name":"Beldora",
+                "size":"Medium",
+                "type":"humanoid (human), storm kings thunder",
+                "alignment":"chaotic good",
+                "AC":"12",
+                "HP":"18 (4d8)",
+                "speed":"30 ft.",
+                "strength":10,
+                "dexterity":14,
+                "constitution":10,
+                "intelligence":16,
+                "wisdom":12,
+                "charisma":16,
+                "challenge":"1/4",
+                "skills":"Deception +5, Insight +3, Investigation +5, Perception +3, Persuasion +5",
+                "senses":"passive Perception 13",
+                "languages":"Common, Draconic, Dwarvish, Halfling",
+                "actions":[
+                    {
+                        "name":"Shortsword",
+                        "text":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage."
+                    },
+                    {
+                        "name":"Hand Crossbow",
+                        "text":"Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage."
+                    }],
+                "reactions":[
+                    {
+                        "name":"Duck and Cover",
+                        "text":"Beldora adds 2 to her AC against one ranged attack that would hit her. To do so, Beldora must see the attacker and can't be Grappled or Restrained."
+                    }]
+            },
+            {
+                "name": "Markham Southwell",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "17 (splint)",
+                "HP": "58 (9d8+18)",
+                "speed": "30 ft.",
+                "strength": 15,
+                "dexterity": 13,
+                "constitution": 14,
+                "intelligence": 11,
+                "wisdom": 16,
+                "charisma": 14,
+                "challenge": "1",
+                "skills": "Perception +5, Survival +5",
+                "senses": "passive Perception 15",
+                "languages": "Common",
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text": "Markham makes two melee attacks."
+                    },
+                    {
+                        "name": "Longsword",
+                        "text":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target.  Hit: 6 (1d8+2) piercing damage."
+                    },
+                    {
+                        "name": "Heavy Crossbow",
+                        "text": "Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target.  Hit: 6 (1d10+1) piercing damage."
+                    }
+                ],
+            },
+            {
+                "name": "Zi Liang",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "chaotic good",
+                "AC": "15",
+                "HP": "22 (5d8)",
+                "speed": "30 ft.",
+                "strength": 12,
+                "dexterity": 15,
+                "constitution": 11,
+                "intelligence": 14,
+                "wisdom": 16,
+                "charisma": 11,
+                "challenge": "1",
+                "skills": "Acrobatics +4, Athletics +3, Perception +5",
+                "senses": "passive Perception 15",
+                "languages": "Common, Elvish, Goblin",
+                "traits":[
+                    {
+                        "name": "Unarmord Defense",
+                        "text": "While Zi is wearing no armor and wielding no shield, her AC includes her Wisdom modifier."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Quarterstaff",
+                        "text": "Melee Weapon Attack:  +3 to hit, reach 5 ft., one target.  Hit:  5 (1d8+1) bludgeoning damage."
+                    },
+                    {
+                        "name": "Sling",
+                        "text": "Ranged Weapon Attack:  +4 to hit, range 30/120 ft., one target.  Hit:  4 (1d4+2) bludgeoning damage.  Zi carries twenty sling stones."
+                    }
+                ]
+            },
+            {
+                "name": "Oren Yogilvy",
+                "size": "Medium",
+                "type": "humanoid (halfling), storm kings thunder",
+                "alignment": "chaotic good",
+                "AC": "11",
+                "HP": "9 (2d6+2)",
+                "speed": "25 ft.",
+                "strength": 8,
+                "dexterity": 13,
+                "constitution": 12,
+                "intelligence": 11,
+                "wisdom": 10,
+                "charisma": 16,
+                "challenge": "1/4",
+                "skills": "Perception +2, Performance +7, Persuasion +5",
+                "senses": "passive Perception 12",
+                "languages": "Common, Halfling",
+                "traits":[
+                    {
+                        "name": "Halfling Nimbleness",
+                        "text": "Can move through the space of any creature that is of a size larger than the halfling."
+                    },
+                    {
+                        "name": "Lucky",
+                        "text": "When Oren rolls a 1 on an attack roll, ability check, or saving throw, he can reroll the die and must use the new roll."
+                    },
+                    {
+                        "name": "Stout Resilience",
+                        "text": "Has advantage on saving throws against poison."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Dagger",
+                        "text": "Melee or Ranged Weapons Attack:  +3 to hit, reach 5 ft., range 20/60 ft., one target.  Hit:  3 (1d4+1) piercing damage."
+                    }
+                ]
+            },
+            {
+                "name": "Miros Xelbrin",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "neutral good",
+                "AC": "10",
+                "HP": "22 (4d8+4)",
+                "speed": "30 ft.",
+                "strength": 16,
+                "dexterity": 10,
+                "constitution": 15,
+                "intelligence": 11,
+                "wisdom": 12,
+                "charisma": 11,
+                "challenge": "1/4",
+                "senses": "Intimidation +4, Perception +3",
+                "languages": "Common",
+                "actions":[
+                    {
+                        "name": "Bearhug",
+                        "text": "Melee Weapon Attack:  +5 to hit, reach 5 ft., one target.  Hit: 5 (1d4+3) bludgeoning damage.  After the initial success, the target is Grappled (escape DC 13) and takes 5 (1d4+3) bludgeoning damage at the start of each of Miros's turns until the Grapple ends.  Miros cannot make attacks while grappling a creature."
+                    },
+                    {
+                        "name": "Club",
+                        "text": "Melee Weapon Attack:  +5 to hit, reach 5 ft., one target.  Hit:  5 (1d4+3) bludgeoning."
+                    },
+                    {
+                        "name": "Heavy Crossbow",
+                        "text": "Ranged Weapon Attack:  +2 to hit, range 100/400 ft., one target.  Hit:  5 (1d10) piercing damage.  Miros carries ten crossbow bolts."
+                    }
+                ]
+            },
+            {
+                "name": "Shalvus Martholio",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "neutral",
+                "AC": "13 (leather)",
+                "HP": "27 (6d8)",
+                "speed": "30 ft.",
+                "challenge": "1/4",
+                "strength": 10,
+                "dexterity": 15,
+                "constitution": 10,
+                "intelligence": 12,
+                "wisdom": 14,
+                "charisma": 14,
+                "senses": "passive Perception 12",
+                "languages": "Common, Elvish",
+                "traits":[
+                    {
+                        "name": "Sneak Attack",
+                        "text": "Shalvus deals an extra 7 (2d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Shalvus that isn't incapacitated and Shalvus doesn't have disadvantage on the attack roll."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Quarterstaff",
+                        "text": "Melee Weapon Attack:  +2 to hit, reach 5 ft., one target.  Hit:  4 (1d8) bludgeoning."
+                    },
+                    {
+                        "name": "Hand Crossbow",
+                        "text": "Ranged Weapon Attack:  +4 to hit, range 30/120 ft., one target.  Hit:  5 (1d6+2) piercing damage.  Shalvus carries ten crossbow bolts."
+                    }
+                ]
+            },
+            {
+                "name": "Augrek Brighthelm",
+                "size": "Medium",
+                "type": "humanoid (dwarf), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "15 (chain shirt, shield)",
+                "HP": "13 (2d8+4)",
+                "speed": "25 ft.",
+                "strength": 14,
+                "dexterity": 11,
+                "constitution": 10,
+                "intelligence": 10,
+                "wisdom": 11,
+                "charisma": 10,
+                "challenge": "1/4",
+                "skills": "Athletics +4, Persuasion +2",
+                "senses": "passive Perception 12",
+                "languages": "Common, Dwarvish",
+                "traits":[
+                    {
+                        "name": "Dwarven Resilience",
+                        "text": "Augrek has advantage on saving throws against poison."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Warhammer",
+                        "text":"Melee Weapon Attack:  +4 to hit, reach 5 ft., one target.  Hit:  7 (1d10+2) bludgeoning damage."
+                    },
+                    {
+                        "name": "Heavy Crossbow",
+                        "text": "Ranged Weapon Attack:  +2 to hit, range 100/400 ft., one target.  Hit:  5 (1d10) piercing damage.  Augrek carries ten crossbow bolts."
+                    }
+                ]
+            },
+            {
+                "name": "Duvessa Shane",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "10",
+                "HP": "9 (2d8)",
+                "speed": "30 ft.",
+                "strength": 10,
+                "dexterity": 11,
+                "constitution": 10,
+                "intelligence": 16,
+                "wisdom": 14,
+                "charisma": 16,
+                "challenge": "1/4",
+                "skills": "Deception +5, Insight +4, Persuasion +5",
+                "senses": "passive Perception 12",
+                "languages": "Common, Dwarvish, Giant, Orc",
+                "actions":[
+                    {
+                        "name": "Dagger",
+                        "text":"Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft., range 20/60 ft., one target.  Hit: 2 (1d4) piercing damage."
+                    }
+                ],
+                "reactions":[
+                    {
+                        "name": "Parry",
+                        "text": "Duvessa adds 2 to her AC against one melee attack that would hit her. To do so, Duvessa must see the attacker and be wielding a melee weapon."
+                    }
+                ]
+            },
+            {
+                "name": "Sir Baric Nylef",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "18 (plate)",
+                "HP": "52 (8d8+16)",
+                "speed": "30 ft.",
+                "strength": 18,
+                "dexterity": 11,
+                "constitution": 14,
+                "intelligence": 11,
+                "wisdom": 15,
+                "charisma": 15,
+                "challenge": "1",
+                "skills": "Insight +4, Investigation +2, Medicine +4",
+                "senses": "passive Perception 12",
+                "languages": "Common",
+                "traits":[
+                    {
+                        "name": "Brave",
+                        "text": "Baric has advantage on saving throws against being frightened."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Maul",
+                        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) bludgeoning damage."
+                    },
+                    {
+                        "name": "Heavy Crossbow",
+                        "text": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target.  Hit: 5 (1d10) piercing damage.  Baric carries twenty crossbow bolts."
+                    }
+                ]
+            },
+            {
+                "name": "Darathra Shendrel",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "14 (breastplate)",
+                "HP": "52 (8d8+16)",
+                "speed": "30 ft.",
+                "challenge": "1/2",
+                "strength": 16,
+                "dexterity": 11,
+                "constitution": 14,
+                "intelligence": 11,
+                "wisdom": 11,
+                "charisma": 15,
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text": "Makes two melee attacks."
+                    },
+                    {
+                        "name": "Greatsword",
+                        "text": "Melee Weapon Attack:  +5 to hit, reach 5 ft., one target.  Hit:  10 (2d8+3) slashing damage."
+                    },
+                    {
+                        "name": "Heavy Crossbow",
+                        "text": "Ranged Weapon Attack:  +2 to hit, range 100/400 ft., one target.  Hit:  5 (1d10) piercing damage.  Dethra carries twenty crossbow bolts."
+                    }
+                ]
+            },
+            {
+                "name": "Narth Tezrin",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "chaotic good",
+                "AC": "12",
+                "HP": "18 (4d8)",
+                "speed": "30 ft.",
+                "challenge": "1/2",
+                "strength": 10,
+                "dexterity": 15,
+                "constitution": 10,
+                "intelligence": 12,
+                "wisdom": 14,
+                "charisma": 16,
+                "languages": "Common, Dwarvish",
+                "senses": "passive Perception 16",
+                "skills": "Insight +4, Investigation +3, Perception +6",
+                "traits":[
+                    {
+                        "name": "Cunning Action",
+                        "text": "On each of his turns, Narth can use a Bonus Action to take the Dash, Disengage, or Hide action."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Shortsword",
+                        "text": "Melee Weapon Attack:  +4 to hit, reach 5 ft., one target.  Hit:  5 (1d6+2) piercing damage."
+                    },
+                    {
+                        "name": "Hand Crossbow",
+                        "text": "Ranged Weapon Attack:  +4 to hit, range 30/120 ft., one target.  Hit:  5 (1d6+2) piercing damage.  Narth carries twenty crossbow bolts."
+                    }
+                ]
+            },
+            {
+                "name": "Darz Helgar",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "neutral",
+                "AC": "12",
+                "HP": "27 (5d8+5)",
+                "speed": "30 ft.",
+                "challenge": "1/2",
+                "strength": 15,
+                "dexterity": 15,
+                "constitution": 12,
+                "intelligence": 10,
+                "wisdom": 11,
+                "charisma": 11,
+                "languages": "Common",
+                "senses": "passive Perception 10",
+                "skills": "Intimidation +2, Sleight of Hand +4, Stealth +4",
+                "traits":[
+                    {
+                        "name": "Sneak Attack",
+                        "text": "Once per turn, Darz deals an extra 7 (2d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Darz that isn't incapacitated and Darz doesn't have disadvantage on the attack roll."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Shortsword",
+                        "text": "Melee Weapon Attack:  +4 to hit, reach 5 ft., one target.  Hit:  5 (1d6+2) piercing damage."
+                    },
+                    {
+                        "name": "Sling",
+                        "text": "Ranged Weapon Attack:  +4 to hit, range 30/120 ft., one target.  Hit:  4 (1d4+2) piercing damage.  Darz carries twenty sling stones."
+                    }
+                ]
+            },
+            {
+                "name": "Othovir",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "lawful neutral",
+                "AC": "10 (13 w/Mage Armor)",
+                "HP": "16 (3d8+3)",
+                "speed": "30 ft.",
+                "challenge": "1",
+                "strength": 11,
+                "dexterity": 10,
+                "constitution": 13,
+                "intelligence": 12,
+                "wisdom": 14,
+                "charisma": 16,
+                "languages": "Common, Elvish",
+                "skills": "Deception +5, Insight +4, Persuasion +5",
+                "traits":[
+                    {
+                        "name": "Spellcasting",
+                        "text": "Othovir is a 2nd-level spellcaster. His spellcasting ability is Charisma (spell save DC 13; +5 to hit with spell attacks). He has the following sorcerer spells prepared:\n Cantrips (at will): blade ward, fire bolt, mending, prestidigitation\n 1st level (3 slots): mage armor, thunderwave, witch bolt"
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Rapier",
+                        "text": "Melee Weapon Attack:  +2 to hit, reach 5 ft., one target.  Hit: 4 (1d8) piercing damage."
+                    }
+                ],
+                "reactions":[
+                    {
+                        "name": "Parry",
+                        "text": "Othovir adds 2 to his AC against one melee attack that would hit him. To do so, Othovir must see the attacker and be wielding a melee weapon."
+                    }
+                ]
+            },
+            {
+                "name": "Ghelryn Foehammer",
+                "size": "Medium",
+                "type": "humanoid (dwarf), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "14 (breast plate and shield)",
+                "HP": "30 (4d8+12)",
+                "strength": 18,
+                "dexterity": 7,
+                "constitution": 17,
+                "intelligence": 10,
+                "wisdom": 11,
+                "charisma": 11,
+                "speed": "25 ft.",
+                "challenge": "1/2",
+                "languages": "Common, Dwarvish",
+                "skills": "Athletics +6, Intimidation +2, Perception +2",
+                "damageResistances": "poison",
+                "senses": "darkvision 60 ft., passive Perception 12",
+                "traits":[
+                    {
+                        "name": "Dwarven Resilience",
+                        "text": "Has advantage on saving throws against poison."
+                    },
+                    {
+                        "name": "Giant Slayer",
+                        "text": "Any weapon attack made against a giant deals an extra 7 (2d6) damage on a hit."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text": "Makes two battleaxe attacks."
+                    },
+                    {
+                        "name": "Battleaxe",
+                        "text": "Melee Weapon Attack:  +6 to hit, reach 5 ft., one target.  Hit:  8 (1d8+4) slashing damage."
+                    }
+                ]
+            },
+            {
+                "name": "Urgala Meltimer",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "12 (leather)",
+                "HP": "58 (9d8+18)",
+                "speed": "30 ft.",
+                "strength": 16,
+                "dexterity": 13,
+                "constitution": 14,
+                "intelligence": 12,
+                "wisdom": 14,
+                "charisma": 13,
+                "challenge": "1/2",
+                "languages": "Common, Giant",
+                "skills": "Athletics +5, Intimidation +3",
+                "traits":[
+                    {
+                        "name": "Giant Slayer",
+                        "text": "Any weapon attack made against a giant deals an extra 7 (2d6) damage on a hit."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text": "Makes two attacks with morningstar or shortbow."
+                    },
+                    {
+                        "name": "Morningstar",
+                        "text": "Melee Weapon Attack:  +5 to hit, reach 5 ft., one target.  Hit:  7 (1d8+3) piercing damage."
+                    },
+                    {
+                        "name": "Shortbow",
+                        "text": "Ranged Weapon Attack:  +3 to hit, range 80/320 ft., one target.  Hit:  4 (1d6+1) piercing damage.  Carries a quiver of twenty arrows."
+                    }
+                ]
+            },
+            {
+                "name": "Tau",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "neutral evil",
+                "AC": "16 (stone breastplate)",
+                "HP": "22 (6d8+6)",
+                "speed": "30 ft.",
+                "strength": 11,
+                "dexterity": 14,
+                "constitution": 12,
+                "intelligence": 10,
+                "wisdom": 13,
+                "charisma": 14,
+                "challenge": "2",
+                "skills": "Deception +4, Persuasion +4, Religion +2",
+                "senses": "",
+                "languages": "Common, Terran",
+                "traits":[
+                    {
+                        "name": "Dark Devotion",
+                        "text": "Has advantage on saving throws against being charmed or frightened."
+                    },
+                    {
+                        "name": "Spellcasting",
+                        "text": "Is a 4th-level spellcaster. His spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). Tau has the following cleric spells prepared:\n\nCantrips (at will): light, sacred flame, thaumaturgy\n1st level (4 slots): command, inflict wounds, shield of faith\n2nd level (3 slots): hold person, spiritual weaponn"
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text":"Makes two melee attacks."
+                    },
+                    {
+                        "name": "Club",
+                        "text": "Melee or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4+2) bludgeoning damage."
+                    }
+                ]
+            },
+            {
+                "name": "Sharda",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "neutral evil",
+                "AC": "16 (stone breastplate)",
+                "HP": "22 (6d8+6)",
+                "speed": "30 ft.",
+                "strength": 11,
+                "dexterity": 14,
+                "constitution": 12,
+                "intelligence": 10,
+                "wisdom": 13,
+                "charisma": 14,
+                "challenge": "2",
+                "skills": "Deception +4, Persuasion +4, Religion +2",
+                "senses": "",
+                "languages": "Common, Terran",
+                "traits":[
+                    {
+                        "name": "Dark Devotion",
+                        "text": "Has advantage on saving throws against being charmed or frightened."
+                    },
+                    {
+                        "name": "Spellcasting",
+                        "text": "Is a 4th-level spellcaster. His spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). Has the following cleric spells prepared:\n\nCantrips (at will): light, sacred flame, thaumaturgy\n1st level (4 slots): command, inflict wounds, shield of faith\n2nd level (3 slots): hold person, spiritual weaponn"
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text":"Makes two melee attacks."
+                    },
+                    {
+                        "name": "Club",
+                        "text": "Melee or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4+2) bludgeoning damage."
+                    }
+                ]
+            },
+            {
+                "name": "Noori",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "chaotic evil",
+                "AC": "13 (hide armor)",
+                "HP": "67 (9d8+27)",
+                "speed": "30 ft.",
+                "strength": 16,
+                "dexterity": 12,
+                "constitution": 17,
+                "intelligence": 9,
+                "wisdom": 11,
+                "charisma": 9,
+                "challenge": "2",
+                "skills": "Stealth +3, Survival +2",
+                "senses": "",
+                "languages": "Common, Bothii",
+                "traits":[
+                    {
+                        "name": "Reckless",
+                        "text": "At the start of her turn, Noori can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against her have advantage until the start of her next turn."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text":"Makes two melee attacks."
+                    },
+                    {
+                        "name": "Club",
+                        "text": "Melee or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4+2) bludgeoning damage."
+                    }
+                ]
+            },
+            {
+                "name": "Ice Spider Queen",
+                "size": "Large",
+                "type": "beast (human), storm kings thunder",
+                "alignment": "unaligned",
+                "AC": "14 (natural armor)",
+                "HP": "44 (8d10+8)",
+                "speed": "30 ft., climb 30 ft.",
+                "strength": 14,
+                "dexterity": 16,
+                "constitution": 12,
+                "intelligence": 2,
+                "wisdom": 11,
+                "charisma": 4,
+                "challenge": "2",
+                "skills": "Stealth +7",
+                "senses": "blindsight 10 ft., darkvision 60 ft.",
+                "languages": "-",
+                "traits":[
+                    {
+                        "name": "Icy Aura",
+                        "text": "Any creature that starts its turn within 5 feet of the queen takes 5 (2d4) cold damage."
+                    },
+                    {
+                        "name": "Spider Climb",
+                        "text": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                    },
+                    {
+                        "name": "Web Sense",
+                        "text": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+                    },
+                    {
+                        "name": "Web Walker",
+                        "text": "The spider ignores movement restrictions caused by webbing."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Bite",
+                        "text":"Melee Weapon Attack:  +5 to hit, reach 5 ft., one target.  Hit:  7 (1d8+3) piercing damage and the target must succeed on a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+                    },
+                    {
+                        "name": "Web",
+                        "text": "Ranged Weapon Attack:  +5 to hit, range 30/60 ft., one target.  The target is restrained by webbing. While restrained in an ice spider's web, a creature takes 2 (1d4) cold damage at the start of each of its turns. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to poison and psychic damage).",
+                        "recharge": "Recharge 5-6"
+                    }
+                ]
+            },
+            {
+                "name": "Ice Spider",
+                "size": "Large",
+                "type": "beast (human), storm kings thunder",
+                "alignment": "unaligned",
+                "AC": "14 (natural armor)",
+                "HP": "26 (4d10+4)",
+                "speed": "30 ft., climb 30 ft.",
+                "strength": 14,
+                "dexterity": 16,
+                "constitution": 12,
+                "intelligence": 2,
+                "wisdom": 11,
+                "charisma": 4,
+                "challenge": "1",
+                "skills": "Stealth +7",
+                "senses": "blindsight 10 ft., darkvision 60 ft.",
+                "languages": "-",
+                "traits":[
+                    {
+                        "name": "Spider Climb",
+                        "text": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                    },
+                    {
+                        "name": "Web Sense",
+                        "text": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+                    },
+                    {
+                        "name": "Web Walker",
+                        "text": "The spider ignores movement restrictions caused by webbing."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Bite",
+                        "text":"Melee Weapon Attack:  +5 to hit, reach 5 ft., one target.  Hit:  7 (1d8+3) piercing damage and the target must succeed on a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+                    },
+                    {
+                        "name": "Web",
+                        "text": "Ranged Weapon Attack:  +5 to hit, range 30/60 ft., one target.  The target is restrained by webbing. While restrained in an ice spider's web, a creature takes 2 (1d4) cold damage at the start of each of its turns. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to poison and psychic damage).",
+                        "recharge": "Recharge 5-6"
+                    }
+                ]
+            },
+            {
+                "name": "Sirac of Suzail",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "lawful good",
+                "AC": "14 (leather)",
+                "HP": "22 (5d8)",
+                "speed": "30 ft.",
+                "strength": 14,
+                "dexterity": 17,
+                "constitution": 11,
+                "intelligence": 12,
+                "wisdom": 13,
+                "charisma": 16,
+                "challenge": "1/4",
+                "skills": "Athletics +4, Insight +3, Survival +3",
+                "senses": "passive Perception 11",
+                "languages": "Common, Orc",
+                "actions":[
+                    {
+                        "name": "Shortsword",
+                        "text":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6+3) piercing damage."
+                    },
+                    {
+                        "name": "Dart",
+                        "text": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4+3) piercing damage."
+                    }
+                ],
+                "reactions":[
+                    {
+                        "name": "Parry",
+                        "text": "Sirac adds 2 to hit AC against one melee attack that would hit him. To do so, Sirac must see the attacker and be wielding a melee weapon."
+                    }
+                ]
+            }],
+        "name":"StormKingsThunder"
+    });
+});
