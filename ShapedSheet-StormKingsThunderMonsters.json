@@ -3,6 +3,80 @@ on('ready', function() {
         "version":"1.0.0",
         "monsters":[
             {
+                "name": "Aaracockra",
+                "size": "Medium",
+                "type": "humanoid (aracockra), storm kings thunder",
+                "alignment": "neutral good",
+                "AC": "12",
+                "HP": "6 (1d8)",
+                "speed": "30 ft., fly 50 ft.",
+                "strength": 10,
+                "dexterity": 14,
+                "constitution": 10,
+                "intelligence": 11,
+                "wisdom": 12,
+                "charisma": 11,
+                "challenge": "1/8",
+                "skills": "Perception +5",
+                "senses": "",
+                "languages": "Common, Auran",
+                "traits":[
+                    {
+                        "name": "Dive Attack",
+                        "text": "If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 (1d6) damage to the target."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Talon",
+                        "text":"Melee Weapon Attack:  +4 to hit, reach 5 ft., one target.  Hit:  4 (1d4+2) slashing damage."
+                    },
+                    {
+                        "name": "Javelin",
+                        "text": "Melee or Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage."
+                    }
+                ]
+            },
+            {
+                "name": "Aaracockra Simulacra",
+                "size": "Medium",
+                "type": "humanoid (aracockra), storm kings thunder",
+                "alignment": "neutral good",
+                "AC": "12",
+                "HP": "6 (1d8)",
+                "speed": "30 ft., fly 50 ft.",
+                "strength": 10,
+                "dexterity": 14,
+                "constitution": 10,
+                "intelligence": 11,
+                "wisdom": 12,
+                "charisma": 11,
+                "challenge": "1/8",
+                "skills": "Perception +5",
+                "senses": "",
+                "languages": "Common, Auran",
+                "traits":[
+                    {
+                        "name": "Dive Attack",
+                        "text": "If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 (1d6) damage to the target."
+                    },
+                    {
+                        "name": "Simulacrum",
+                        "text": "When a simulacrum drops to 0 hit points or is subjected to a successful dispel magic spell (DC 17), it reverts to ice and snow and is destroyed."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Talon",
+                        "text":"Melee Weapon Attack:  +4 to hit, reach 5 ft., one target.  Hit:  4 (1d4+2) slashing damage."
+                    },
+                    {
+                        "name": "Javelin",
+                        "text": "Melee or Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage."
+                    }
+                ]
+            },
+            {
                 "name":"Beldora",
                 "size":"Medium",
                 "type":"humanoid (human), storm kings thunder",
@@ -845,6 +919,50 @@ on('ready', function() {
                         "name": "Summon Earth Elemental",
                         "recharge": "1/Day",
                         "text": "The yakfolk summons an Earth Elemental. The summoned elemental appears in an unoccupied space within 60 feet of its summoner and acts as an ally of the summoner. It remains for 10 minutes, until it dies, or until its summoner dismisses it as an action."
+                    }
+                ]
+            },
+            {
+                "name": "Jasper Dimmerchasm",
+                "size": "Medium",
+                "type": "humanoid (dwarf), storm kings thunder",
+                "alignment": "neutral evil",
+                "AC": "17 (splint)",
+                "HP": "67 (9d8+27)",
+                "strength": 16,
+                "dexterity": 13,
+                "constitution": 16,
+                "intelligence": 10,
+                "wisdom": 11,
+                "charisma": 10,
+                "speed": "25 ft.",
+                "challenge": "3",
+                "languages": "Common, Dwarvish",
+                "skills": "Athletics +5, Perception +2",
+                "damageResistances": "poison",
+                "senses": "darkvision 60 ft.",
+                "traits":[
+                    {
+                        "name": "Dwarven Resilience",
+                        "text": "Has advantage on saving throws against poison."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Multiattack",
+                        "text": "Makes two battleaxe attacks.  If it has a handaxe drawn, it can also make a handaxe attack."
+                    },
+                    {
+                        "name": "Battleaxe",
+                        "text": "Melee Weapon Attack:  +5 to hit, reach 5 ft., one target.  Hit:  8 (1d10+3) slashing damage."
+                    },
+                    {
+                        "name": "Handaxe",
+                        "text": "Melee or Ranged Weapon Attack:  +5 to hit, reach 5 ft., range 20/60 ft., one target.  Hit:  6 (1d6+3) slashing damage."
+                    },
+                    {
+                        "name": "Heavy Crossbow",
+                        "text": "Ranged Weapon Attack:  +3 to hit, range 100/400 ft., one target.  Hit:  6 (1d10+1) piercing damage."
                     }
                 ]
             },
