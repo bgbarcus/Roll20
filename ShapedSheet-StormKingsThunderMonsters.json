@@ -1514,6 +1514,45 @@ on('ready', function() {
                         "text":"Ranged Weapon Attack:  +11 to hit, range 60/240 ft., one target.  Hit 29 (4d10+7) bludgeoning damage."
                     }
                 ]
+            },
+            {
+                "name": "Tholtz Daggerdark",
+                "size": "Medium",
+                "type": "humanoid (human), storm kings thunder",
+                "alignment": "chaotic evil",
+                "AC": "12 (15 with mage armor)",
+                "HP": "99 (18d8+18)",
+                "speed": "30 ft.",
+                "strength": 10,
+                "dexterity": 14,
+                "constitution": 12,
+                "intelligence": 20,
+                "wisdom": 15,
+                "charisma": 16,
+                "challenge": "12",
+                "savingThrows": "Int +9, Wis +6",
+                "skills": "Arcana +13, History +13",
+                "languages": "Common, +5 others",
+                "traits":[
+                    {
+                        "name": "Magic Resistance",
+                        "text": "The archmage has advantage on saving throws against spells and other magical effects."
+                    },
+                    {
+                        "name": "Spellcasting",
+                        "text": "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared:\n\nCantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp\n1st level (4 slots): detect magic, identify, mage armor*, magic missile\n2nd level (3 slots): detect thoughts, mirror image, misty step\n3rd level (3 slots): counterspell, fly, lightning bolt\n4th level (3 slots): banishment, fire shield, stoneskin*\n5th level (3 slots): cone of cold, scrying, wall of force\n6th level (1 slot): globe of invulnerability\n7th level (1 slot): teleport\n8th level (1 slot): mind blank*\n9th level (1 slot): time stop\n* The archmage casts these spells on itself before combat."
+                    }
+                ],
+                "actions":[
+                    {
+                        "name": "Dagger",
+                        "text": "Melee Weapon Attack:  +6 to hit, reach 5 ft., one target. Hit:  4 (1d4+2) piercing damage."
+                    },
+                    {
+                        "name": "Dagger",
+                        "text":"Ranged Weapon Attack:  +6 to hit, range 20/60 ft., one target. Hit:  4 (1d4+2) piercing damage."
+                    }
+                ]
             }],
         "name":"StormKingsThunder"
     });
